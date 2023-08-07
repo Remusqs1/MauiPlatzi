@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPlatzi.Views.SampleViews.DarkLightSamplePage"
+             Title="DarkLightSamplePage">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Button Text="This is my text" WidthRequest="250" HeightRequest="50"
+                BackgroundColor="{AppThemeBinding Dark=Green, Light=Pink}"
+                TextColor="{AppThemeBinding Dark=Red, Light=Black}"
+                VerticalOptions="Center" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

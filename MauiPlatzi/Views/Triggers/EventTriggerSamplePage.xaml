@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiPlatzi.Views.Triggers"
+             x:Class="MauiPlatzi.Views.Triggers.EventTriggerSamplePage"
+             Title="EventTriggerSamplePage">
+    <VerticalStackLayout Padding="20">
+        <Button Text="Hallo Trigger" BackgroundColor="#A569BD" TextColor="White">
+            <Button.Triggers>
+                <EventTrigger Event="Clicked">
+                    <local:TriggerSampleClass/>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>
